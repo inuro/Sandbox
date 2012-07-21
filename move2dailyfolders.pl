@@ -15,7 +15,7 @@ foreach(@files){
         $mon = $mon < 10 ? '0' . $mon : $mon;
         $mday = $mday < 10 ? '0' . $mday : $mday;
         my $dir = $year . '-' . $mon . '-' . $mday;
-        my $path = '/Users/inuro/Pictures/' . $dir;
+        my $path = './' . $dir;
         #check directory exists
         if(! -e $path){
             print "no such dir:" . $path . "\n";
